@@ -86,20 +86,21 @@ export default function Navbar() {
           <ThemeToggle />
 
           <a
-            href="/Balajps.pdf"
-            download
-            className="
-              bg-blue-600
-              text-white
-              px-4
-              py-2
-              rounded-lg
-              hover:bg-blue-700
-              transition
-            "
-          >
-            Resume
-          </a>
+  href="https://1drv.ms/b/c/81dc9ab96006fd62/IQC1VH33VmfvQ4qciCu0xXAoAa5hZI1FRwuLLuKCNspjC_w?e=1dXCWO"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    bg-blue-600
+    text-white
+    px-4
+    py-2
+    rounded-lg
+    hover:bg-blue-700
+    transition
+  "
+>
+  Resume
+</a>
 
         </div>
 

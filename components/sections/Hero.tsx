@@ -60,12 +60,29 @@ overflow-hidden
               </a>
 
               <a
-                href="/Balajps.pdf"
-                download
-                className="inline-flex items-center justify-center min-w-[180px] border border-slate-300 bg-white text-slate-700 px-6 py-3 rounded-xl hover:bg-slate-100 hover:scale-105 transition-all duration-300 font-medium"
-              >
-                Download Resume
-              </a>
+  href="https://1drv.ms/b/c/81dc9ab96006fd62/IQC1VH33VmfvQ4qciCu0xXAoAa5hZI1FRwuLLuKCNspjC_w?e=1dXCWO"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    inline-flex
+    items-center
+    justify-center
+    min-w-[180px]
+    border
+    border-slate-300
+    bg-white
+    text-slate-700
+    px-6
+    py-3
+    rounded-xl
+    hover:bg-slate-100
+    transition-all
+    duration-300
+    font-medium
+  "
+>
+  View Resume
+</a>
 
             </div>
           </motion.div>
