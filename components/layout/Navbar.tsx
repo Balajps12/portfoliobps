@@ -86,7 +86,7 @@ export default function Navbar() {
           <ThemeToggle />
 
           <a
-  href="https://1drv.ms/b/c/81dc9ab96006fd62/IQC1VH33VmfvQ4qciCu0xXAoAa5hZI1FRwuLLuKCNspjC_w?e=1dXCWO"
+  href="https://1drv.ms/b/c/81dc9ab96006fd62/IQDLjhj8GCn8QpUBQFLdwi8hAR_O0nMDoaDIojRKdWN2jgU?e=nPVVBz"
   target="_blank"
   rel="noopener noreferrer"
   className="
