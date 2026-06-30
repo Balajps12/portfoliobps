@@ -37,6 +37,15 @@ export default function Navbar() {
           </li>
 
           <li>
+  <a
+    href="#experience"
+    className="hover:text-blue-600 transition"
+  >
+    Experience
+  </a>
+</li>
+
+          <li>
             <a href="#skills" className="hover:text-blue-600 transition">
               Skills
             </a>
