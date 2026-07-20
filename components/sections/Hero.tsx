@@ -79,7 +79,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://1drv.ms/b/c/81dc9ab96006fd62/IQByKS_CDi0BTYZQqj5GQ77YAWcufsl9aYfCy_CvAiMjE5c?e=7Lx0nP"
+              href="https://1drv.ms/b/c/81dc9ab96006fd62/IQBIqp6QQg_7SYJ1b3lITYlbAY7bnRD9mSd0ieIs5lHtMEE?e=pDFcSq"
               target="_blank"
               rel="noopener noreferrer"
               className="
