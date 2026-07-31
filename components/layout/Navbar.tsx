@@ -1,12 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import {
-  Menu,
-  X,
-  Download,
-} from "lucide-react";
-
+import { Menu, X, Download } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 const links = [
@@ -27,38 +22,39 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const sections = links
-      .map((item) => document.querySelector(item.href))
-      .filter(Boolean);
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActive(entry.target.id);
-          }
-        });
-      },
-      {
-        threshold: 0.35,
-      }
-    );
-
-    sections.forEach((section) => {
-      if (section) observer.observe(section);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 25);
+      setScrolled(window.scrollY > 20);
+
+      const scrollPosition = window.scrollY + 140;
+
+      for (const item of links) {
+        const section = document.querySelector(
+          item.href
+        ) as HTMLElement | null;
+
+        if (!section) continue;
+
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+
+        if (
+          scrollPosition >= top &&
+          scrollPosition < top + height
+        ) {
+          setActive(item.href.substring(1));
+          break;
+        }
+      }
     };
+
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener(
+      "scroll",
+      handleScroll
+    );
   }, []);
 
   return (
@@ -84,16 +80,16 @@ export default function Navbar() {
         {/* Logo */}
 
         <a
-          href="#"
+          href="#hero"
           className="
             text-2xl
             font-bold
+            tracking-wide
             text-slate-900
             dark:text-white
-            tracking-wide
           "
         >
-          Balaj
+          <span className="text-blue-600">B</span>alaj
         </a>
 
         {/* Desktop Navigation */}
@@ -106,7 +102,9 @@ export default function Navbar() {
 
               <a
                 href={item.href}
+                aria-label={`Go to ${item.name}`}
                 className={`
+                  group
                   relative
                   font-medium
                   transition-all
@@ -117,6 +115,12 @@ export default function Navbar() {
                       ? "text-blue-600"
                       : "text-slate-700 dark:text-slate-300 hover:text-blue-600"
                   }
+
+                  focus-visible:outline-none
+                  focus-visible:ring-2
+                  focus-visible:ring-blue-500
+                  focus-visible:ring-offset-2
+                  rounded
                 `}
               >
                 {item.name}
@@ -147,7 +151,7 @@ export default function Navbar() {
 
         </ul>
 
-        {/* Right */}
+        {/* Right Side */}
 
         <div className="flex items-center gap-3">
 
@@ -189,8 +193,6 @@ export default function Navbar() {
             Resume
           </a>
 
-          {/* Mobile */}
-
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="
@@ -200,6 +202,7 @@ export default function Navbar() {
               text-slate-700
               dark:text-white
             "
+            aria-label="Toggle navigation menu"
           >
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -207,49 +210,44 @@ export default function Navbar() {
         </div>
 
       </nav>
-
-      {/* Mobile Menu */}
+            {/* Mobile Menu */}
 
       {menuOpen && (
-
         <div
           className="
             lg:hidden
-
             bg-white
             dark:bg-[#081A31]
-
             border-t
             border-slate-200
             dark:border-blue-900/40
-
             px-6
             py-6
+            shadow-xl
           "
         >
-
           <div className="flex flex-col gap-5">
 
             {links.map((item) => (
-
               <a
                 key={item.name}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
+                aria-label={`Go to ${item.name}`}
                 className={`
                   font-medium
-                  transition
+                  transition-colors
+                  duration-300
 
                   ${
                     active === item.href.substring(1)
                       ? "text-blue-600"
-                      : "text-slate-700 dark:text-slate-300"
+                      : "text-slate-700 dark:text-slate-300 hover:text-blue-600"
                   }
                 `}
               >
                 {item.name}
               </a>
-
             ))}
 
             <a
@@ -257,7 +255,11 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               className="
-                mt-2
+                mt-3
+                flex
+                items-center
+                justify-center
+                gap-2
 
                 bg-blue-600
                 hover:bg-blue-700
@@ -269,21 +271,16 @@ export default function Navbar() {
                 px-5
                 py-3
 
-                flex
-                items-center
-                justify-center
-                gap-2
+                transition-all
+                duration-300
               "
             >
               <Download size={18} />
-
               Download Resume
             </a>
 
           </div>
-
         </div>
-
       )}
 
     </header>

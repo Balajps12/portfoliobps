@@ -6,8 +6,8 @@ import Experience from "@/components/sections/Experience";
 import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
 import Research from "@/components/sections/Research";
-import Leadership from "@/components/sections/Leadership";
 import Education from "@/components/sections/Education";
+import Leadership from "@/components/sections/Leadership";
 import Certifications from "@/components/sections/Certifications";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
@@ -31,9 +31,12 @@ export default function Home() {
 
         <Research />
 
+        <Education />
+
+
         <Leadership />
 
-        <Education />
+
 
         <Certifications />
 
