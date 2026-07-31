@@ -93,7 +93,7 @@ export default function Navbar() {
             tracking-wide
           "
         >
-          <span className="text-blue-600">B</span>alaj
+          Balaj
         </a>
 
         {/* Desktop Navigation */}
