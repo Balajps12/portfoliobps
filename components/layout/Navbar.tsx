@@ -89,7 +89,7 @@ export default function Navbar() {
             dark:text-white
           "
         >
-          <span className="text-blue-600">B</span>alaj
+          Balaj
         </a>
 
         {/* Desktop Navigation */}

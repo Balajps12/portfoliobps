@@ -8,6 +8,7 @@ import Floating from "@/components/ui/Floating";
 export default function Hero() {
   return (
     <section
+    id="hero"
       className="
         min-h-screen
         flex
