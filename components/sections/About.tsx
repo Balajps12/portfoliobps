@@ -30,37 +30,38 @@ overflow-hidden
             </p>
 
             <h2 className="text-4xl font-bold text-slate-900 dark:text-white">
-              Turning Data Into Better Business Decisions
+              Transforming Data into Smarter Business Decisions
             </h2>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
 
             {/* Left Content */}
-            <div>
-              <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed text-justify mb-6">
-                I am currently pursuing an MSc in International
-                Management & Global Business at the University of
-                Limerick, building on my academic foundation in
-                Computational Statistics & Data Analytics.
-              </p>
+            <div className="space-y-6 text-lg leading-relaxed text-slate-600 dark:text-slate-300 text-justify">
 
-              <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed text-justify mb-6">
-                My interests lie at the intersection of business,
-                analytics, process improvement, and digital
-                transformation. Through academic research,
-                AI-enabled automation projects, and analytical
-                problem-solving, I enjoy transforming complex
-                information into actionable insights.
-              </p>
+  <p>
+    I am currently pursuing an MSc in International Management & Global
+    Business at the University of Limerick, building on a strong analytical
+    foundation from my Integrated MSc in Computational Statistics &
+    Data Analytics.
+  </p>
 
-              <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
-                I aspire to contribute to organizations through
-                business analysis, operational excellence, and
-                data-driven decision-making while helping teams
-                navigate technology-driven change.
-              </p>
-            </div>
+  <p>
+    My interests span business analysis, enterprise AI, software quality
+    assurance, digital transformation, analytics, and process improvement.
+    Through international internships, academic research, and AI-driven
+    projects, I enjoy solving business problems using data, technology,
+    and structured decision-making.
+  </p>
+
+  <p>
+    My goal is to bridge business strategy with technology by designing
+    data-driven solutions that improve operational efficiency, support
+    strategic decision-making, and create measurable business value for
+    organisations.
+  </p>
+
+</div>
 
             {/* Right Stats */}
             <div className="grid grid-cols-2 gap-6">
@@ -130,7 +131,7 @@ overflow-hidden
                 </h3>
 
                 <p className="mt-2 text-slate-600 dark:text-slate-300">
-                  Master's Degrees
+                  Professional Internships
                 </p>
               </div>
 

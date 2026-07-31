@@ -43,15 +43,16 @@ export default function Hero() {
           </h1>
 
           <h2 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-300 mt-4">
-            Analytics, Strategy & Process Improvement
+            Enterprise AI • Analytics • Process Improvement
           </h2>
 
           <p className="mt-8 text-lg text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed text-justify">
-            MSc International Management & Global Business candidate with
-            expertise in analytics, business research, AI-enabled solutions,
-            and process optimization. Passionate about transforming data into
-            actionable insights and driving smarter business decisions.
-          </p>
+  MSc International Management & Global Business candidate with
+  hands-on experience in Enterprise AI, Software Quality Assurance,
+  analytics, and business process improvement. Passionate about
+  transforming complex data into actionable business insights and
+  delivering technology-driven solutions.
+</p>
 
           <div className="flex flex-wrap gap-4 mt-10">
 
@@ -75,7 +76,7 @@ export default function Hero() {
                 shadow-lg
               "
             >
-              View Projects
+              Explore Projects
             </a>
 
             <a
@@ -105,7 +106,7 @@ export default function Hero() {
                 font-medium
               "
             >
-              View Resume
+              View CV
             </a>
 
           </div>
