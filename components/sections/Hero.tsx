@@ -81,7 +81,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://1drv.ms/b/c/81dc9ab96006fd62/IQBIqp6QQg_7SYJ1b3lITYlbAY7bnRD9mSd0ieIs5lHtMEE?e=pDFcSq"
+              href="https://1drv.ms/b/c/81dc9ab96006fd62/IQC49tZrnlNDSr11QicrCSAnAf-Jn-Zn9DXGtoTTLoKKX2Q?e=sNaQjc"
               target="_blank"
               rel="noopener noreferrer"
               className="
