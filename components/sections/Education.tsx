@@ -7,7 +7,7 @@ const education = [
     location: "Limerick, Ireland",
     period: "2025 – 2026",
     status: "Completed",
-    achievement: "2026",
+    achievement: "Expected 2:1 Honours",
 
     details:
       "Developed a multidisciplinary foundation in international management, global business strategy, leadership, organisational behaviour, international marketing, human resource management, finance, and project management.",
