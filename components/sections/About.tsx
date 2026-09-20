@@ -40,35 +40,13 @@ export default function About() {
             <div className="space-y-6 text-lg leading-relaxed text-slate-600 dark:text-slate-300 text-justify">
 
               <p>
-                I am a business and analytics professional with an MSc in
-                International Management & Global Business from the University
-                of Limerick and an Integrated MSc in Computational Statistics &
-                Data Analytics from VIT.
+                I connect business, data, and AI to solve problems and develop practical, technology-enabled solutions. With an MSc in International Management & Global Business and an Integrated MSc in Computational Statistics & Data Analytics, I bring a combination of technical knowledge and business understanding.
               </p>
 
               <p>
-                My experience spans AI automation, business research, data
-                analytics, and technology-enabled process improvement. Through
-                professional internships, academic research, and independent
-                projects, I work across both business and technical contexts
-                to structure problems, analyse information, and develop
-                practical solutions.
+                My interests include data analytics, AI automation, business research, and process improvement, with a focus on turning ideas into meaningful business outcomes.
               </p>
 
-              <p>
-                I have a particular interest in applying data, AI, and emerging
-                technologies to business and operational challenges. This
-                includes exploring AI agents and LLM-based workflows,
-                conducting business and market research, and using analytical
-                methods to turn information into actionable insights.
-              </p>
-
-              <p>
-                My approach is straightforward: understand the business
-                problem, structure the available information, apply the right
-                analytical or technological approach, and translate the
-                findings into practical business insight.
-              </p>
 
             </div>
 
