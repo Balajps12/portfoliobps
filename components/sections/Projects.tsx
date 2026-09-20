@@ -10,13 +10,16 @@ const projects = [
 
     github: "https://github.com/Balajps12/ai-creator-os",
 
-    description:
-      "Built an AI-powered operating system that autonomously researches, plans, generates, and manages content workflows using intelligent AI agents and workflow orchestration.",
+    problem:
+      "Content creation workflows can involve multiple repetitive stages, including research, planning, generation, and workflow management.",
 
-    impact: [
-      "Reduced manual content creation workflows through AI automation.",
-      "Designed scalable multi-step AI pipelines for productivity.",
-      "Demonstrated enterprise-ready workflow automation concepts.",
+    approach:
+      "Built an AI-powered operating system that combines intelligent agents, LLMs, APIs, and workflow orchestration to support automated content workflows.",
+
+    highlights: [
+      "Designed a multi-step workflow for AI-assisted content research and generation.",
+      "Explored agent-based workflow orchestration for content operations.",
+      "Applied AI automation concepts to a practical content-management use case.",
     ],
 
     tech: [
@@ -39,73 +42,84 @@ const projects = [
     github:
       "https://github.com/Balajps12/ai-automation-platform",
 
-    description:
-      "Engineered autonomous multi-agent systems capable of reasoning, memory management, planning, research, and task orchestration.",
+    problem:
+      "Complex knowledge tasks often require multiple capabilities such as research, reasoning, planning, memory, and task coordination.",
 
-    impact: [
-      "Automated complex knowledge workflows.",
-      "Designed collaborative AI agent architecture.",
-      "Improved execution efficiency through intelligent automation.",
+    approach:
+      "Developed multi-agent workflows using specialised AI agents to explore reasoning, memory, planning, research, and task orchestration.",
+
+    highlights: [
+      "Designed collaborative AI agent workflows.",
+      "Explored reasoning, memory, planning, and research capabilities.",
+      "Applied agent orchestration concepts to complex knowledge tasks.",
     ],
 
     tech: [
       "Python",
       "CrewAI",
-      "Large Language Models",
-      "OpenRouter API",
-      "Workflow Design",
+      "Hermes",
+      "LLMs",
+      "OpenRouter",
+      "AI Agents",
     ],
   },
 
   {
-    title: "Customer Churn Prediction & Retention Analytics",
+    title: "Customer Churn Analysis",
     featured: false,
     status: "Completed",
-    category: "Analytics",
+    category: "Data & Analytics",
     color: "green",
 
     github:
       "https://github.com/Balajps12/Transaction-Attrition-Prediction",
 
-    description:
-      "Developed predictive machine learning models to identify customer churn risks and generate actionable retention insights.",
+    problem:
+      "Customer attrition can make it difficult for organisations to identify customers who may be at higher risk of leaving.",
 
-    impact: [
-      "Processed over 10,000 customer records.",
-      "Generated retention-focused business insights.",
-      "Improved decision-making through predictive analytics.",
+    approach:
+      "Applied predictive modelling and machine learning techniques to customer data to analyse churn patterns and identify potential retention insights.",
+
+    highlights: [
+      "Analysed a dataset containing 10,000+ customer records.",
+      "Applied predictive modelling to customer attrition analysis.",
+      "Generated insights that can support data-informed retention decisions.",
     ],
 
     tech: [
       "Python",
+      "Machine Learning",
+      "Predictive Modelling",
       "Pandas",
       "Scikit-learn",
-      "Excel",
-      "Predictive Analytics",
     ],
   },
 
   {
-    title: "Intelligent Music Recommendation Engine",
+    title: "Music Recommendation & Genre Classification",
     featured: false,
     status: "Completed",
-    category: "Analytics",
+    category: "Data & Analytics",
     color: "green",
 
     github:
       "https://github.com/Balajps12/Music-Genre-Recommendation-System",
 
-    description:
-      "Designed a machine learning recommendation system capable of personalized music genre classification and recommendation.",
+    problem:
+      "Music platforms need effective ways to classify music and support personalised recommendations from available data.",
 
-    impact: [
-      "Achieved 92.9% genre classification accuracy.",
-      "Improved recommendation relevance.",
-      "Applied machine learning for personalization.",
+    approach:
+      "Developed a machine learning-based system for music genre classification and recommendation using Python and analytical techniques.",
+
+    highlights: [
+      "Achieved approximately 92.9% genre classification accuracy.",
+      "Applied machine learning to music classification and recommendation.",
+      "Explored data-driven approaches to personalised music experiences.",
     ],
 
     tech: [
       "Python",
+      "SQL",
       "Machine Learning",
       "Pandas",
       "Scikit-learn",
@@ -114,7 +128,7 @@ const projects = [
   },
 
   {
-    title: "Marine Species Detection using Faster R-CNN",
+    title: "Marine Species Detection",
     featured: false,
     status: "Completed",
     category: "Computer Vision",
@@ -123,13 +137,16 @@ const projects = [
     github:
       "https://github.com/Balajps12/Marine-Species-Detection-using-Faster-R-CNN",
 
-    description:
-      "Implemented a deep learning object detection model using Faster R-CNN to identify marine species from underwater imagery.",
+    problem:
+      "Identifying marine species from underwater imagery presents a computer vision challenge due to the complexity of image-based detection.",
 
-    impact: [
-      "Automated biodiversity monitoring.",
-      "Applied computer vision to marine conservation.",
-      "Demonstrated practical deep learning implementation.",
+    approach:
+      "Implemented a Faster R-CNN object detection approach to identify marine species from underwater images.",
+
+    highlights: [
+      "Applied deep learning to an image-based marine species detection problem.",
+      "Implemented object detection using Faster R-CNN.",
+      "Explored a computer vision application in the context of marine imagery.",
     ],
 
     tech: [
@@ -145,26 +162,29 @@ const projects = [
     title: "Creative Storytelling with AI",
     featured: false,
     status: "Completed",
-    category: "AI & Automation",
+    category: "Generative AI",
     color: "blue",
 
     github:
       "https://github.com/Balajps12/Creative-Storytelling-with-AI",
 
-    description:
-      "Developed a generative AI storytelling platform capable of producing interactive narratives and creative content.",
+    problem:
+      "Generative AI can be used to support creative content creation, but effective outputs depend on how prompts and language models are structured.",
 
-    impact: [
-      "Showcased practical Generative AI applications.",
-      "Enhanced creative content generation.",
-      "Demonstrated prompt engineering workflows.",
+    approach:
+      "Developed an AI-based storytelling project exploring generative content creation and prompt engineering with large language models.",
+
+    highlights: [
+      "Explored Generative AI for creative storytelling.",
+      "Applied prompt engineering techniques to content generation.",
+      "Demonstrated a practical application of large language models.",
     ],
 
     tech: [
       "Python",
       "Generative AI",
       "Prompt Engineering",
-      "Large Language Models",
+      "LLMs",
     ],
   },
 
@@ -178,13 +198,16 @@ const projects = [
     github:
       "https://github.com/Balajps12/Automated-Diet-Food-Delivery",
 
-    description:
-      "Designed a personalized nutrition platform combining AI recommendations, operational automation, and business strategy for health-tech services.",
+    problem:
+      "Personalised nutrition services require coordination between customer needs, dietary recommendations, food delivery, and operational processes.",
 
-    impact: [
-      "Developed a scalable startup concept.",
-      "Integrated AI into personalized nutrition.",
-      "Focused on customer-centric product innovation.",
+    approach:
+      "Designed a prototype concept combining personalised recommendations, AI, operational automation, and business model thinking for a health-tech food delivery platform.",
+
+    highlights: [
+      "Developed a prototype for a personalised nutrition and food delivery concept.",
+      "Explored how AI could support personalised recommendations.",
+      "Combined product strategy, business model thinking, and operational considerations.",
     ],
 
     tech: [
@@ -206,277 +229,317 @@ export default function Projects() {
         <div className="max-w-7xl mx-auto px-6">
 
           {/* Header */}
-
           <div className="mb-16">
 
-            <p className="text-blue-600 font-semibold mb-3">
+            <p className="text-blue-600 dark:text-blue-400 font-semibold mb-3">
               Portfolio
             </p>
 
-            <h2 className="text-4xl font-bold text-slate-900 dark:text-white">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
               Projects & Technical Portfolio
             </h2>
 
             <p className="mt-4 text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed text-justify">
-              A curated portfolio showcasing enterprise AI, business analytics,
-              machine learning, software engineering, and product innovation
-              projects focused on solving real-world business challenges through
-              technology.
+              A selection of projects across AI automation, data analytics,
+              machine learning, computer vision, and product innovation,
+              demonstrating how technical approaches can be applied to
+              practical problems.
             </p>
 
           </div>
 
           {/* Metrics */}
-
           <div className="grid md:grid-cols-3 gap-6 mb-16">
 
-            <div className="rounded-2xl border border-slate-200 dark:border-blue-900/40 bg-white dark:bg-[#102544] p-6 text-center shadow-sm">
-
-              <h3 className="text-4xl font-bold text-blue-600">
-                7+
-              </h3>
-
-              <p className="mt-2 text-slate-600 dark:text-slate-300">
-                Projects
-              </p>
-
-            </div>
-
-            <div className="rounded-2xl border border-slate-200 dark:border-blue-900/40 bg-white dark:bg-[#102544] p-6 text-center shadow-sm">
-
-              <h3 className="text-4xl font-bold text-blue-600">
-                92.9%
-              </h3>
-
-              <p className="mt-2 text-slate-600 dark:text-slate-300">
-                Model Accuracy
-              </p>
-
-            </div>
-
-            <div className="rounded-2xl border border-slate-200 dark:border-blue-900/40 bg-white dark:bg-[#102544] p-6 text-center shadow-sm">
-
-              <h3 className="text-4xl font-bold text-blue-600">
-                10K+
-              </h3>
-
-              <p className="mt-2 text-slate-600 dark:text-slate-300">
-                Records Analysed
-              </p>
-
-            </div>
-
-          </div>
-
-          {/* Projects Grid */}
-
-          <div className="grid lg:grid-cols-2 gap-8">
-                    {projects.map((project) => (
             <div
-              key={project.title}
-              className={`
-                ${
-                  project.featured
-                    ? "lg:col-span-2"
-                    : ""
-                }
-                rounded-3xl
+              className="
+                rounded-2xl
                 border
                 border-slate-200
                 dark:border-blue-900/40
                 bg-white
                 dark:bg-[#102544]
-                p-8
+                p-6
+                text-center
                 shadow-sm
-                hover:shadow-2xl
-                hover:-translate-y-2
-                hover:border-blue-500
-                transition-all
-                duration-500
-              `}
+              "
             >
-              {/* Top */}
+              <h3 className="text-4xl font-bold text-blue-600">
+                7
+              </h3>
 
-              <div className="flex items-start justify-between gap-4 flex-wrap">
+              <p className="mt-2 text-slate-600 dark:text-slate-300">
+                Featured Projects
+              </p>
+            </div>
 
-                <div>
+            <div
+              className="
+                rounded-2xl
+                border
+                border-slate-200
+                dark:border-blue-900/40
+                bg-white
+                dark:bg-[#102544]
+                p-6
+                text-center
+                shadow-sm
+              "
+            >
+              <h3 className="text-4xl font-bold text-blue-600">
+                92.9%
+              </h3>
+
+              <p className="mt-2 text-slate-600 dark:text-slate-300">
+                Genre Classification Accuracy
+              </p>
+            </div>
+
+            <div
+              className="
+                rounded-2xl
+                border
+                border-slate-200
+                dark:border-blue-900/40
+                bg-white
+                dark:bg-[#102544]
+                p-6
+                text-center
+                shadow-sm
+              "
+            >
+              <h3 className="text-4xl font-bold text-blue-600">
+                10K+
+              </h3>
+
+              <p className="mt-2 text-slate-600 dark:text-slate-300">
+                Customer Records Analysed
+              </p>
+            </div>
+
+          </div>
+
+          {/* Projects Grid */}
+          <div className="grid lg:grid-cols-2 gap-8">
+
+            {projects.map((project) => (
+
+              <div
+                key={project.title}
+                className={`
+                  ${
+                    project.featured
+                      ? "lg:col-span-2"
+                      : ""
+                  }
+                  rounded-3xl
+                  border
+                  border-slate-200
+                  dark:border-blue-900/40
+                  bg-white
+                  dark:bg-[#102544]
+                  p-8
+                  shadow-sm
+                  hover:shadow-2xl
+                  hover:-translate-y-2
+                  hover:border-blue-500
+                  transition-all
+                  duration-500
+                `}
+              >
+
+                {/* Top */}
+                <div className="flex items-start justify-between gap-4 flex-wrap">
+
+                  <div>
+
+                    <span
+                      className={`
+                        inline-block
+                        px-3
+                        py-1
+                        rounded-full
+                        text-sm
+                        font-medium
+                        mb-4
+
+                        ${
+                          project.color === "blue"
+                            ? "bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400"
+                            : project.color === "green"
+                            ? "bg-green-50 text-green-700 dark:bg-green-900/30 dark:text-green-400"
+                            : project.color === "orange"
+                            ? "bg-orange-50 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400"
+                            : "bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400"
+                        }
+                      `}
+                    >
+                      {project.category}
+                    </span>
+
+                    <h3 className="text-3xl font-bold text-slate-900 dark:text-white">
+                      {project.title}
+                    </h3>
+
+                  </div>
 
                   <span
                     className={`
-                      inline-block
-                      px-3
-                      py-1
+                      px-4
+                      py-2
                       rounded-full
                       text-sm
-                      font-medium
-                      mb-4
+                      font-semibold
 
                       ${
-                        project.color === "blue"
-                          ? "bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400"
-                          : project.color === "green"
-                          ? "bg-green-50 text-green-700 dark:bg-green-900/30 dark:text-green-400"
-                          : project.color === "orange"
-                          ? "bg-orange-50 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400"
-                          : "bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400"
+                        project.status === "Completed"
+                          ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400"
+                          : "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400"
                       }
                     `}
                   >
-                    {project.category}
+                    {project.status}
                   </span>
-
-                  <h3 className="text-3xl font-bold text-slate-900 dark:text-white">
-                    {project.title}
-                  </h3>
 
                 </div>
 
-                <span
-                  className={`
-                    px-4
-                    py-2
-                    rounded-full
-                    text-sm
-                    font-semibold
+                {/* Problem */}
+                <div className="mt-8">
 
-                    ${
-                      project.status === "Completed"
-                        ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400"
-                        : "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400"
-                    }
-                  `}
-                >
-                  {project.status}
-                </span>
+                  <h4 className="font-semibold text-slate-900 dark:text-white mb-3">
+                    Problem
+                  </h4>
 
-              </div>
+                  <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
+                    {project.problem}
+                  </p>
 
-              {/* Description */}
+                </div>
 
-              <p className="mt-6 text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
-                {project.description}
-              </p>
+                {/* Approach */}
+                <div className="mt-6">
 
-              {/* Business Impact */}
+                  <h4 className="font-semibold text-slate-900 dark:text-white mb-3">
+                    Approach
+                  </h4>
 
-              <div className="mt-8">
+                  <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
+                    {project.approach}
+                  </p>
 
-                <h4 className="font-semibold text-slate-900 dark:text-white mb-4">
-                  Business Impact
-                </h4>
+                </div>
 
-                <ul className="space-y-3">
+                {/* Project Highlights */}
+                <div className="mt-8">
 
-                  {project.impact.map((item) => (
+                  <h4 className="font-semibold text-slate-900 dark:text-white mb-4">
+                    Project Highlights
+                  </h4>
 
-                    <li
-                      key={item}
-                      className="flex gap-3 text-slate-600 dark:text-slate-300"
-                    >
+                  <ul className="space-y-3">
 
-                      <span className="text-green-600 font-bold">
-                        ✓
+                    {project.highlights.map((item) => (
+
+                      <li
+                        key={item}
+                        className="flex gap-3 text-slate-600 dark:text-slate-300"
+                      >
+
+                        <span className="text-blue-600 font-bold">
+                          •
+                        </span>
+
+                        <span>{item}</span>
+
+                      </li>
+
+                    ))}
+
+                  </ul>
+
+                </div>
+
+                {/* Technologies */}
+                <div className="mt-8">
+
+                  <h4 className="font-semibold text-slate-900 dark:text-white mb-4">
+                    Technologies
+                  </h4>
+
+                  <div className="flex flex-wrap gap-3">
+
+                    {project.tech.map((tech) => (
+
+                      <span
+                        key={tech}
+                        className="
+                          px-4
+                          py-2
+                          rounded-full
+                          bg-slate-100
+                          dark:bg-slate-800
+                          text-slate-700
+                          dark:text-slate-300
+                          text-sm
+                          font-medium
+                          hover:bg-blue-600
+                          hover:text-white
+                          dark:hover:bg-blue-600
+                          transition-all
+                          duration-300
+                        "
+                      >
+                        {tech}
                       </span>
 
-                      <span>{item}</span>
+                    ))}
 
-                    </li>
+                  </div>
 
-                  ))}
+                </div>
 
-                </ul>
+                {/* Footer */}
+                <div className="mt-10 flex items-center justify-between flex-wrap gap-4">
 
-              </div>
-
-              {/* Technologies */}
-
-              <div className="mt-8">
-
-                <h4 className="font-semibold text-slate-900 dark:text-white mb-4">
-                  Technology Stack
-                </h4>
-
-                <div className="flex flex-wrap gap-3">
-
-                  {project.tech.map((tech) => (
-
-                    <span
-                      key={tech}
-                      className="
-                        px-4
-                        py-2
-                        rounded-full
-                        bg-slate-100
-                        dark:bg-slate-800
-                        text-slate-700
-                        dark:text-slate-300
-                        text-sm
-                        font-medium
-                        hover:bg-blue-600
-                        hover:text-white
-                        dark:hover:bg-blue-600
-                        transition-all
-                        duration-300
-                      "
-                    >
-                      {tech}
+                  {project.featured && (
+                    <span className="text-blue-600 dark:text-blue-400 font-semibold">
+                      ⭐ Featured Project
                     </span>
+                  )}
 
-                  ))}
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                      inline-flex
+                      items-center
+                      gap-2
+                      rounded-xl
+                      bg-blue-600
+                      px-5
+                      py-3
+                      text-white
+                      font-medium
+                      hover:bg-blue-700
+                      hover:gap-3
+                      transition-all
+                      duration-300
+                    "
+                  >
+                    View on GitHub →
+                  </a>
 
                 </div>
 
               </div>
 
-              {/* Footer */}
+            ))}
 
-              <div className="mt-10 flex items-center justify-between flex-wrap gap-4">
-
-                {project.featured && (
-
-                  <span className="text-blue-600 dark:text-blue-400 font-semibold">
-                    ⭐ Featured Project
-                  </span>
-
-                )}
-
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="
-                    inline-flex
-                    items-center
-                    gap-2
-                    rounded-xl
-                    bg-blue-600
-                    px-5
-                    py-3
-                    text-white
-                    font-medium
-                    hover:bg-blue-700
-                    hover:gap-3
-                    transition-all
-                    duration-300
-                  "
-                >
-                  View on GitHub →
-
-                </a>
-
-              </div>
-
-            </div>
-
-          ))}
+          </div>
 
         </div>
-
-      </div>
-
-    </section>
-
-  </FadeIn>
-
-);
+      </section>
+    </FadeIn>
+  );
 }

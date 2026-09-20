@@ -5,17 +5,21 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
 
-          <div>
+          {/* Identity */}
+          <div className="text-center md:text-left">
+
             <h3 className="text-white font-bold text-xl">
               Balaj Parasuraman Sangeetha
             </h3>
 
             <p className="text-slate-400 mt-2">
-              Business Analyst | Strategy, Analytics & Operations
+              Business, Data & AI Professional
             </p>
+
           </div>
 
-          <div className="flex gap-6">
+          {/* Links */}
+          <div className="flex flex-wrap justify-center gap-6">
 
             <a
               href="https://github.com/Balajps12"
@@ -46,10 +50,13 @@ export default function Footer() {
 
         </div>
 
+        {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-blue-900/20 text-center">
+
           <p className="text-slate-500 text-sm">
             © 2026 Balaj Parasuraman Sangeetha. All Rights Reserved.
           </p>
+
         </div>
 
       </div>

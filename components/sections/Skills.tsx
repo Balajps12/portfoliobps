@@ -6,12 +6,13 @@ const skillCategories = [
     title: "Business & Strategy",
     skills: [
       "Business Analysis",
-      "Business Process Improvement",
-      "Strategic Thinking",
-      "KPI Reporting",
-      "Stakeholder Management",
-      "Digital Transformation",
+      "Strategic Analysis",
       "Business Research",
+      "Market Research",
+      "Operations",
+      "Process Improvement",
+      "Decision Support",
+      "KPI Analysis",
     ],
   },
 
@@ -19,63 +20,45 @@ const skillCategories = [
     icon: "📈",
     title: "Data & Analytics",
     skills: [
-      "Excel",
-      "SQL",
       "Python",
-      "Power BI",
-      "Data Visualization",
-      "Predictive Modelling",
-      "Statistical Analysis",
-      "Data Cleaning",
+      "SQL",
+      "R",
+      "Excel",
+      "Data Analysis",
+      "Machine Learning",
+      "NLP",
+      "Predictive Analytics",
+      "Data Visualisation",
     ],
   },
 
   {
     icon: "🤖",
-    title: "Enterprise AI & Automation",
+    title: "AI & Automation",
     skills: [
-      "AI Workflow Automation",
-      "Large Language Models",
-      "Prompt Engineering",
+      "Generative AI",
       "AI Agents",
+      "LLMs",
+      "Prompt Engineering",
+      "AI Workflow Automation",
       "CrewAI",
-      "OpenRouter API",
-      "Document Processing",
-      "Workflow Design",
-    ],
-  },
-
-  {
-    icon: "🧪",
-    title: "Software Quality",
-    skills: [
-      "Manual Testing",
-      "Automation Testing",
-      "Software Quality Assurance",
-      "Software Testing Life Cycle (STLC)",
-      "Software Development Life Cycle (SDLC)",
-      "Test Case Design",
-      "Test Execution",
-      "Functional Testing",
-      "Regression Testing",
-      "Defect Reporting",
-      "Bug Tracking",
-      "Agile Methodology",
-      "Quality Documentation",
+      "OpenRouter",
+      "API Integration",
+      "Intelligent Document Processing",
     ],
   },
 
   {
     icon: "🤝",
-    title: "Leadership & Collaboration",
+    title: "Professional Skills",
     skills: [
-      "Communication",
-      "Leadership",
       "Problem Solving",
-      "Team Collaboration",
-      "Cross-cultural Communication",
+      "Stakeholder Communication",
       "Research",
-      "Presentation Skills",
+      "Documentation",
+      "Presentation",
+      "Cross-functional Collaboration",
+      "Agile",
       "Adaptability",
     ],
   },
@@ -91,28 +74,26 @@ export default function Skills() {
         <div className="max-w-7xl mx-auto px-6">
 
           {/* Header */}
-
           <div className="mb-16">
 
-            <p className="text-blue-600 font-semibold mb-3">
+            <p className="text-blue-600 dark:text-blue-400 font-semibold mb-3">
               Core Expertise
             </p>
 
-            <h2 className="text-4xl font-bold text-slate-900 dark:text-white">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
               Skills & Capabilities
             </h2>
 
             <p className="mt-4 text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed text-justify">
-              Combining business strategy, analytics, enterprise AI, software
-              quality assurance, and leadership to solve complex business
-              problems and deliver technology-driven solutions.
+              A combination of business analysis, data analytics, AI
+              technologies, and professional capabilities developed through
+              academic research, internships, and practical projects.
             </p>
 
           </div>
 
           {/* Skills Grid */}
-
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8">
 
             {skillCategories.map((category) => (
 

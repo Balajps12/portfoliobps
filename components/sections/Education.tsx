@@ -6,10 +6,11 @@ const education = [
     institution: "University of Limerick",
     location: "Limerick, Ireland",
     period: "2025 – 2026",
-    status: "In Progress",
-    achievement: "Expected Award: Second Class Honours, Grade 1 (2:1)",
+    status: "Completed",
+    achievement: "2026",
+
     details:
-      "Specialising in international management, global business strategy, leadership, organisational behaviour, international marketing, finance, and digital transformation.",
+      "Developed a multidisciplinary foundation in international management, global business strategy, leadership, organisational behaviour, international marketing, human resource management, finance, and project management.",
 
     highlights: [
       "Global Business Strategy",
@@ -30,7 +31,7 @@ const education = [
     achievement: "First Class Honours • CGPA: 8.11 / 10",
 
     details:
-      "Developed a strong analytical foundation through statistics, machine learning, artificial intelligence, business intelligence, predictive analytics, and software development.",
+      "Developed a strong analytical foundation through statistics, machine learning, artificial intelligence, predictive analytics, data analytics, and computational methods.",
 
     highlights: [
       "Statistics",
@@ -38,8 +39,8 @@ const education = [
       "Artificial Intelligence",
       "Python",
       "SQL",
-      "Business Intelligence",
       "Data Analytics",
+      "Predictive Analytics",
       "Research",
     ],
   },
@@ -55,28 +56,26 @@ export default function Education() {
         <div className="max-w-7xl mx-auto px-6">
 
           {/* Header */}
-
           <div className="mb-16">
 
-            <p className="text-blue-600 font-semibold mb-3">
+            <p className="text-blue-600 dark:text-blue-400 font-semibold mb-3">
               Academic Journey
             </p>
 
-            <h2 className="text-4xl font-bold text-slate-900 dark:text-white">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
               Education
             </h2>
 
             <p className="mt-4 max-w-3xl text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
-              My academic journey combines business, management, analytics,
-              artificial intelligence, and technology, providing a strong
-              multidisciplinary foundation for solving complex business
-              challenges.
+              My academic background combines international management,
+              business strategy, statistics, data analytics, and artificial
+              intelligence, providing a multidisciplinary foundation for
+              understanding and solving business problems.
             </p>
 
           </div>
 
           {/* Education Cards */}
-
           <div className="space-y-8">
 
             {education.map((item) => (
@@ -100,13 +99,12 @@ export default function Education() {
               >
 
                 {/* Top */}
-
                 <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6">
 
                   <div>
 
                     <span
-                      className={`
+                      className="
                         inline-block
                         px-3
                         py-1
@@ -114,13 +112,11 @@ export default function Education() {
                         text-sm
                         font-medium
                         mb-4
-
-                        ${
-                          item.status === "Graduated"
-                            ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400"
-                            : "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400"
-                        }
-                      `}
+                        bg-green-100
+                        text-green-700
+                        dark:bg-green-900/30
+                        dark:text-green-400
+                      "
                     >
                       {item.status}
                     </span>
@@ -139,7 +135,7 @@ export default function Education() {
 
                   </div>
 
-                  <div className="text-right">
+                  <div className="text-left lg:text-right">
 
                     <p className="font-semibold text-slate-700 dark:text-slate-300">
                       {item.period}
@@ -154,13 +150,11 @@ export default function Education() {
                 </div>
 
                 {/* Description */}
-
                 <p className="mt-8 text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
                   {item.details}
                 </p>
 
                 {/* Academic Highlights */}
-
                 <div className="mt-8">
 
                   <h4 className="font-semibold text-slate-900 dark:text-white mb-4">

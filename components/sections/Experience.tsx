@@ -3,77 +3,69 @@ import FadeIn from "@/components/ui/FadeIn";
 const experiences = [
   {
     company: "ADLYTICA Sp. z o.o.",
-    role: "Enterprise AI & Business Operations Intern",
+    role: "AI Automation Intern",
     duration: "June 2026 – Present",
-    location: "Nysa, Poland (Remote)",
+    location: "Poland (Remote)",
     type: "Internship",
 
     description:
-      "Supporting enterprise AI initiatives while gaining practical experience in cloud technologies, business operations, AI-powered workflows, market research, and strategic analysis within an international technology environment.",
+      "Developing practical experience in enterprise AI and automation, with a focus on AI agents, LLMs, intelligent document processing, cloud platforms, and technology-enabled business processes.",
 
     responsibilities: [
-      "Learn enterprise AI platform operations and deployment workflows.",
-      "Gain practical exposure to AWS, Google Cloud, and Microsoft Azure ecosystems.",
-      "Support business development, market research, and strategic analysis initiatives.",
-      "Explore AI agents, private LLMs, and intelligent document processing systems.",
-      "Participate in cross-functional team meetings, workshops, and partner sessions.",
-      "Develop practical knowledge of enterprise AI solutions and startup operations.",
+      "Develop AI-powered automation workflows using AI agents, LLMs, intelligent document processing, and APIs.",
+      "Research AI technologies and identify opportunities for business process and workflow automation.",
+      "Explore enterprise AI solutions and the application of emerging technologies to operational processes.",
+      "Gain practical exposure to AWS, Microsoft Azure, and Google Cloud platforms.",
+      "Participate in research, workshops, and team activities related to AI platforms and business operations.",
     ],
 
     technologies: [
-      "Enterprise AI",
-      "AWS",
-      "Google Cloud",
-      "Microsoft Azure",
-      "Business Research",
-      "Market Analysis",
+      "AI Automation",
       "AI Agents",
-      "Private LLMs",
-      "Document Processing",
-      "Business Operations",
+      "LLMs",
+      "Intelligent Document Processing",
+      "APIs",
+      "AWS",
+      "Microsoft Azure",
+      "Google Cloud",
+      "Business Research",
+      "Workflow Automation",
     ],
 
     impact:
-      "Enterprise AI • Cloud Technologies • Business Operations • Market Research",
+      "AI Automation • Enterprise AI • Cloud Platforms • Business Operations",
   },
 
   {
     company: "BLR Corporate Services",
-    role: "Quality Analyst Intern",
+    role: "Business & Operations Analyst Intern",
     duration: "July 2026 – Present",
-    location: "Coimbatore, India (Remote)",
+    location: "India (Remote)",
     type: "Internship",
 
     description:
-      "Supporting software quality assurance activities through manual testing, automation testing concepts, defect reporting, and Agile collaboration while developing practical knowledge of modern testing methodologies.",
+      "Supporting business and operational activities through research, analysis, documentation, and process improvement as part of a business assignment with ERA (Elaine Ryan & Associates Ltd), Ireland.",
 
     responsibilities: [
-      "Learn Software Development Life Cycle (SDLC) and Software Testing Life Cycle (STLC) methodologies.",
-      "Perform manual testing by designing, executing, and validating test cases.",
-      "Gain practical exposure to automation testing concepts and testing frameworks.",
-      "Identify, document, and report software defects while supporting quality assurance processes.",
-      "Participate in Agile daily stand-up meetings and collaborate with cross-functional teams.",
-      "Maintain testing documentation, defect reports, and daily activity records.",
-      "Develop practical knowledge of software quality assurance, testing strategies, and industry best practices.",
+      "Support business and operational activities involving research, analysis, documentation, and process improvement.",
+      "Analyse information and structure findings to support business initiatives and decision-making.",
+      "Contribute to technology-enabled business improvement and organisational activities.",
+      "Support the preparation and organisation of information for business and operational requirements.",
     ],
 
     technologies: [
-      "Manual Testing",
-      "Automation Testing",
-      "Software QA",
-      "STLC",
-      "SDLC",
-      "Test Case Design",
-      "Functional Testing",
-      "Regression Testing",
-      "Defect Reporting",
-      "Bug Tracking",
-      "Agile",
-      "Quality Documentation",
+      "Business Analysis",
+      "Business Research",
+      "Operations",
+      "Process Improvement",
+      "Documentation",
+      "Data Analysis",
+      "Decision Support",
+      "Stakeholder Communication",
     ],
 
     impact:
-      "Software QA • Manual Testing • STLC • Agile Collaboration",
+      "Business Analysis • Operations • Research • Process Improvement",
   },
 ];
 
@@ -87,28 +79,26 @@ export default function Experience() {
         <div className="max-w-7xl mx-auto px-6">
 
           {/* Section Header */}
-
           <div className="mb-16">
 
-            <p className="text-blue-600 font-semibold mb-3">
+            <p className="text-blue-600 dark:text-blue-400 font-semibold mb-3">
               Professional Experience
             </p>
 
-            <h2 className="text-4xl font-bold text-slate-900 dark:text-white">
-              Professional Experience
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
+              Experience Across Business, Data & AI
             </h2>
 
             <p className="mt-4 text-slate-600 dark:text-slate-300 max-w-3xl text-justify">
-              Building practical experience across Enterprise AI, Software
-              Quality Assurance, cloud technologies, business operations, and
-              digital transformation through international internships while
-              pursuing postgraduate studies.
+              Building practical experience across AI automation, business
+              analysis, research, operations, cloud technologies, and
+              technology-enabled process improvement through international
+              professional experience.
             </p>
 
           </div>
 
           {/* Experience Cards */}
-
           <div className="space-y-10">
 
             {experiences.map((exp) => (
@@ -131,6 +121,7 @@ export default function Experience() {
                 "
               >
 
+                {/* Header */}
                 <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-4">
 
                   <div>
@@ -143,7 +134,7 @@ export default function Experience() {
                       {exp.role}
                     </h3>
 
-                    <h4 className="text-xl text-blue-600 mt-2">
+                    <h4 className="text-xl text-blue-600 dark:text-blue-400 mt-2">
                       {exp.company}
                     </h4>
 
@@ -159,16 +150,16 @@ export default function Experience() {
 
                 </div>
 
+                {/* Description */}
                 <p className="mt-8 text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
                   {exp.description}
                 </p>
 
                 {/* Responsibilities */}
-
                 <div className="mt-8">
 
                   <h4 className="font-semibold text-slate-900 dark:text-white mb-4">
-                    Key Responsibilities & Learning
+                    Key Responsibilities
                   </h4>
 
                   <ul className="space-y-3">
@@ -192,7 +183,6 @@ export default function Experience() {
                 </div>
 
                 {/* Skills */}
-
                 <div className="mt-8 flex flex-wrap gap-3">
 
                   {exp.technologies.map((tech) => (
@@ -219,7 +209,6 @@ export default function Experience() {
                 </div>
 
                 {/* Focus Areas */}
-
                 <div className="mt-8 pt-6 border-t border-slate-200 dark:border-slate-700">
 
                   <h4 className="font-semibold text-slate-900 dark:text-white mb-2">

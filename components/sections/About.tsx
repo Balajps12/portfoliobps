@@ -7,65 +7,75 @@ export default function About() {
       <section
         id="about"
         className="
-min-h-screen
-flex
-items-center
-justify-center
-bg-slate-50
-dark:bg-gradient-to-br
-dark:from-[#071426]
-dark:via-[#081a31]
-dark:to-[#0b1f3a]
-px-6
-pt-24
-overflow-hidden
-"
+          min-h-screen
+          flex
+          items-center
+          justify-center
+          bg-slate-50
+          dark:bg-gradient-to-br
+          dark:from-[#071426]
+          dark:via-[#081a31]
+          dark:to-[#0b1f3a]
+          px-6
+          pt-24
+          overflow-hidden
+        "
       >
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6 w-full">
 
           {/* Section Header */}
           <div className="mb-16">
-            <p className="text-blue-600 font-semibold mb-3">
+            <p className="text-blue-600 dark:text-blue-400 font-semibold mb-3">
               About Me
             </p>
 
-            <h2 className="text-4xl font-bold text-slate-900 dark:text-white">
-              Transforming Data into Smarter Business Decisions
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
+              Connecting Business Problems with Data & Technology
             </h2>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
 
             {/* Left Content */}
             <div className="space-y-6 text-lg leading-relaxed text-slate-600 dark:text-slate-300 text-justify">
 
-  <p>
-    I am currently pursuing an MSc in International Management & Global
-    Business at the University of Limerick, building on a strong analytical
-    foundation from my Integrated MSc in Computational Statistics &
-    Data Analytics.
-  </p>
+              <p>
+                I am a business and analytics professional with an MSc in
+                International Management & Global Business from the University
+                of Limerick and an Integrated MSc in Computational Statistics &
+                Data Analytics from VIT.
+              </p>
 
-  <p>
-    My interests span business analysis, enterprise AI, software quality
-    assurance, digital transformation, analytics, and process improvement.
-    Through international internships, academic research, and AI-driven
-    projects, I enjoy solving business problems using data, technology,
-    and structured decision-making.
-  </p>
+              <p>
+                My experience spans AI automation, business research, data
+                analytics, and technology-enabled process improvement. Through
+                professional internships, academic research, and independent
+                projects, I work across both business and technical contexts
+                to structure problems, analyse information, and develop
+                practical solutions.
+              </p>
 
-  <p>
-    My goal is to bridge business strategy with technology by designing
-    data-driven solutions that improve operational efficiency, support
-    strategic decision-making, and create measurable business value for
-    organisations.
-  </p>
+              <p>
+                I have a particular interest in applying data, AI, and emerging
+                technologies to business and operational challenges. This
+                includes exploring AI agents and LLM-based workflows,
+                conducting business and market research, and using analytical
+                methods to turn information into actionable insights.
+              </p>
 
-</div>
+              <p>
+                My approach is straightforward: understand the business
+                problem, structure the available information, apply the right
+                analytical or technological approach, and translate the
+                findings into practical business insight.
+              </p>
+
+            </div>
 
             {/* Right Stats */}
             <div className="grid grid-cols-2 gap-6">
 
+              {/* Analytics & AI Projects */}
               <div
                 className="
                   p-6
@@ -81,14 +91,15 @@ overflow-hidden
                 "
               >
                 <h3 className="text-4xl font-bold text-blue-600">
-                  <Counter end={6} />+
+                  <Counter end={7} />+
                 </h3>
 
                 <p className="mt-2 text-slate-600 dark:text-slate-300">
-                  Major Analytics & AI Projects
+                  Analytics, AI & Technology Projects
                 </p>
               </div>
 
+              {/* Education */}
               <div
                 className="
                   p-6
@@ -104,14 +115,15 @@ overflow-hidden
                 "
               >
                 <h3 className="text-4xl font-bold text-blue-600">
-                  <Counter end={4} />
+                  <Counter end={2} />
                 </h3>
 
                 <p className="mt-2 text-slate-600 dark:text-slate-300">
-                  Professional Certifications
+                  MSc Degrees
                 </p>
               </div>
 
+              {/* Internships */}
               <div
                 className="
                   p-6
@@ -135,6 +147,7 @@ overflow-hidden
                 </p>
               </div>
 
+              {/* Leadership */}
               <div
                 className="
                   p-6

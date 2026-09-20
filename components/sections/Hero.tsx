@@ -8,7 +8,7 @@ import Floating from "@/components/ui/Floating";
 export default function Hero() {
   return (
     <section
-    id="hero"
+      id="hero"
       className="
         min-h-screen
         flex
@@ -40,23 +40,25 @@ export default function Hero() {
           </p>
 
           <h1 className="text-5xl lg:text-7xl font-bold text-slate-900 dark:text-white leading-tight">
-            Business Analyst
+            Business, Data & AI Professional
           </h1>
 
           <h2 className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-300 mt-4">
-            Enterprise AI • Analytics • Process Improvement
+            Analytics • AI Automation • Strategy • Operations
           </h2>
 
           <p className="mt-8 text-lg text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed text-justify">
-  MSc International Management & Global Business candidate with
-  hands-on experience in Enterprise AI, Software Quality Assurance,
-  analytics, and business process improvement. Passionate about
-  transforming complex data into actionable business insights and
-  delivering technology-driven solutions.
-</p>
+            I combine business analysis, data analytics, and AI technologies
+            to understand complex problems and develop practical,
+            technology-enabled solutions. My work spans business research,
+            process improvement, analytics, and AI automation, with a focus on
+            translating technical capabilities into meaningful business
+            outcomes.
+          </p>
 
           <div className="flex flex-wrap gap-4 mt-10">
 
+            {/* Explore My Work */}
             <a
               href="#projects"
               className="
@@ -77,11 +79,12 @@ export default function Hero() {
                 shadow-lg
               "
             >
-              Explore Projects
+              Explore My Work
             </a>
 
+            {/* View CV */}
             <a
-              href="https://1drv.ms/b/c/81dc9ab96006fd62/IQC49tZrnlNDSr11QicrCSAnAf-Jn-Zn9DXGtoTTLoKKX2Q?e=sNaQjc"
+              href="https://1drv.ms/b/c/81dc9ab96006fd62/IQCmhEfRgJ8uQK0O9AcsnMkHAYaVT1CSwSXTcJB02YDS_kA?e=pEeFnK"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -135,7 +138,14 @@ export default function Hero() {
                 alt="Balaj Parasuraman Sangeetha"
                 fill
                 priority
-                className="object-cover rounded-full border-4 border-white dark:border-slate-800 shadow-2xl"
+                className="
+                  object-cover
+                  rounded-full
+                  border-4
+                  border-white
+                  dark:border-slate-800
+                  shadow-2xl
+                "
               />
 
             </div>

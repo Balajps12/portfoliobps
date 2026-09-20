@@ -15,8 +15,8 @@ export default function Contact() {
           overflow-hidden
         "
       >
-        {/* Background Glow */}
 
+        {/* Background Glow */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
 
           <div
@@ -38,42 +38,38 @@ export default function Contact() {
         <div className="relative max-w-5xl mx-auto px-6 text-center">
 
           {/* Heading */}
-
           <p className="text-blue-400 font-semibold mb-3">
             Let's Connect
           </p>
 
-          <h2 className="text-5xl font-bold leading-tight">
+          <h2 className="text-5xl lg:text-6xl font-bold leading-tight">
 
-            Ready to Build
+            Let's Build
             <br />
 
             <span className="text-blue-400">
-              Technology-Driven Business Solutions
+              Practical Business Solutions
             </span>
 
           </h2>
 
           <p className="mt-8 max-w-3xl mx-auto text-slate-300 text-lg leading-relaxed">
-
-            I'm actively seeking graduate opportunities where I can contribute
-            through business analysis, enterprise AI, software quality,
-            analytics, and digital transformation while continuing to grow as a
-            technology-driven business professional.
-
+            I am open to opportunities across business, data, AI, analytics,
+            strategy, and operations where I can combine analytical thinking,
+            business understanding, and technology to solve practical
+            organisational challenges.
           </p>
 
-          {/* Currently Seeking */}
-
+          {/* Areas of Interest */}
           <div className="mt-10 flex flex-wrap justify-center gap-3">
 
             {[
-              "Business Analyst",
-              "Technology Consulting",
+              "Business Analysis",
               "Data Analytics",
-              "Enterprise AI",
-              "Software Quality",
-              "Digital Transformation",
+              "AI & Automation",
+              "Strategy",
+              "Operations",
+              "Technology",
             ].map((item) => (
 
               <span
@@ -98,9 +94,9 @@ export default function Contact() {
           </div>
 
           {/* Buttons */}
+          <div className="mt-12 flex flex-wrap justify-center gap-5">
 
-          <div className="mt-12 flex flex-col md:flex-row justify-center gap-5">
-
+            {/* Email */}
             <a
               href="mailto:balaj.12@outlook.com"
               className="
@@ -118,6 +114,7 @@ export default function Contact() {
               Email Me
             </a>
 
+            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/balaj-ps"
               target="_blank"
@@ -137,6 +134,7 @@ export default function Contact() {
               LinkedIn
             </a>
 
+            {/* GitHub */}
             <a
               href="https://github.com/Balajps12"
               target="_blank"
@@ -156,14 +154,34 @@ export default function Contact() {
               GitHub
             </a>
 
+            {/* CV */}
+            <a
+              href="https://1drv.ms/b/c/81dc9ab96006fd62/IQCmhEfRgJ8uQK0O9AcsnMkHAYaVT1CSwSXTcJB02YDS_kA?e=pEeFnK"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                border
+                border-slate-600
+                px-7
+                py-4
+                rounded-xl
+                hover:bg-slate-800
+                transition-all
+                duration-300
+                hover:scale-105
+              "
+            >
+              View CV
+            </a>
+
           </div>
 
           {/* Footer Information */}
-
           <div className="mt-14 pt-10 border-t border-slate-700">
 
-            <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div className="grid md:grid-cols-2 gap-8 text-center">
 
+              {/* Location */}
               <div>
 
                 <p className="text-blue-400 font-semibold mb-2">
@@ -176,37 +194,26 @@ export default function Contact() {
 
               </div>
 
+              {/* Areas of Interest */}
               <div>
 
                 <p className="text-blue-400 font-semibold mb-2">
-                  Availability
+                  Areas of Interest
                 </p>
 
                 <p className="text-slate-300">
-                  Open to Graduate Opportunities
-                </p>
-
-              </div>
-
-              <div>
-
-                <p className="text-blue-400 font-semibold mb-2">
-                  Interests
-                </p>
-
-                <p className="text-slate-300">
-                  Business • AI • Analytics • Technology
+                  Business • Data • AI • Analytics • Strategy • Operations
                 </p>
 
               </div>
 
             </div>
 
-            <p className="mt-10 text-slate-400 text-sm">
+            <p className="mt-10 text-slate-400 text-sm leading-relaxed">
 
-              Thank you for visiting my portfolio. I look forward to connecting
-              with professionals, recruiters, and organisations working at the
-              intersection of business and technology.
+              Thank you for visiting my portfolio. I welcome conversations
+              with professionals, recruiters, and organisations working across
+              business and technology.
 
             </p>
 

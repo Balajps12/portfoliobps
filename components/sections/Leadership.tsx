@@ -5,43 +5,43 @@ const leadership = [
     title: "Secretary",
     organization: "International Society, University of Limerick",
     location: "Limerick, Ireland",
-    period: "2025 – Present",
+    period: "2025 – 2026",
     type: "Leadership",
 
     description:
-      "Supporting the planning, coordination, and execution of multicultural events while managing society communications and administrative activities to enhance student engagement across an international community.",
+      "Supported the coordination and administration of the International Society, contributing to communications, documentation, event planning, and collaboration within a multicultural university community.",
 
     achievements: [
-      "Coordinate communication between committee members and students.",
-      "Support planning and delivery of multicultural events and networking activities.",
-      "Assist in organising society operations and administrative tasks.",
-      "Promote student engagement within an international university environment.",
+      "Supported communication and coordination between committee members and students.",
+      "Contributed to planning and organising society events and activities.",
+      "Supported society documentation, administration, and organisational activities.",
+      "Collaborated with university and external stakeholders on society-related activities.",
     ],
 
     skills: [
-      "Leadership",
       "Communication",
-      "Event Management",
+      "Event Coordination",
       "Organisation",
       "Team Collaboration",
       "Stakeholder Coordination",
+      "Cross-cultural Collaboration",
     ],
   },
 
   {
     title: "Registered Volunteer",
-    organization: "PVA, University of Limerick",
+    organization: "President's Volunteer Awards, University of Limerick",
     location: "Limerick, Ireland",
     period: "2025 – 2026",
     type: "Volunteer",
 
     description:
-      "Participated in structured volunteering initiatives supporting community engagement while balancing postgraduate academic responsibilities.",
+      "Contributed to volunteering activities within the University of Limerick community alongside postgraduate academic commitments.",
 
     achievements: [
-      "Contributed to university volunteer programmes.",
-      "Supported community-focused initiatives.",
-      "Collaborated with volunteers from diverse backgrounds.",
+      "Participated in university volunteering initiatives.",
+      "Contributed to community-focused activities.",
+      "Received the Gold President's Volunteer Award for volunteering contributions.",
     ],
 
     skills: [
@@ -60,19 +60,19 @@ const leadership = [
     type: "Volunteer",
 
     description:
-      "Provided academic mentoring and educational support to orphaned students through structured learning programmes and one-to-one guidance.",
+      "Provided academic assistance and learning support to school students through volunteering activities focused on education and student development.",
 
     achievements: [
-      "Mentored school students through academic support sessions.",
-      "Encouraged learning and personal development.",
-      "Contributed to educational inclusion initiatives.",
+      "Supported students through academic assistance and learning activities.",
+      "Contributed to education-focused volunteering initiatives.",
+      "Worked with students through structured learning support.",
     ],
 
     skills: [
       "Mentoring",
-      "Leadership",
       "Communication",
       "Teaching",
+      "Leadership",
       "Social Impact",
     ],
   },
@@ -88,34 +88,31 @@ export default function Leadership() {
         <div className="max-w-7xl mx-auto px-6">
 
           {/* Header */}
-
           <div className="mb-16">
 
-            <p className="text-blue-600 font-semibold mb-3">
-              Leadership & Community Impact
+            <p className="text-blue-600 dark:text-blue-400 font-semibold mb-3">
+              Leadership & Community
             </p>
 
-            <h2 className="text-4xl font-bold text-slate-900 dark:text-white">
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white">
               Leadership & Volunteering
             </h2>
 
             <p className="mt-4 max-w-3xl text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
-              Beyond academics and professional experience, I actively contribute
-              to student leadership and community initiatives that strengthen my
-              communication, collaboration, organisational, and leadership
-              capabilities.
+              Experience beyond academics and professional work, with a focus
+              on communication, organisation, collaboration, event
+              coordination, and community involvement.
             </p>
 
           </div>
 
           {/* Cards */}
-
           <div className="space-y-8">
 
             {leadership.map((item) => (
 
               <div
-                key={item.title}
+                key={`${item.organization}-${item.title}`}
                 className="
                   bg-white
                   dark:bg-[#102544]
@@ -133,7 +130,6 @@ export default function Leadership() {
               >
 
                 {/* Top */}
-
                 <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6">
 
                   <div>
@@ -179,13 +175,11 @@ export default function Leadership() {
                 </div>
 
                 {/* Description */}
-
                 <p className="mt-8 text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
                   {item.description}
                 </p>
 
                 {/* Contributions */}
-
                 <div className="mt-8">
 
                   <h4 className="font-semibold text-slate-900 dark:text-white mb-4">
@@ -200,7 +194,9 @@ export default function Leadership() {
                         key={achievement}
                         className="flex gap-3 text-slate-600 dark:text-slate-300"
                       >
-                        <span className="text-blue-600 font-bold">•</span>
+                        <span className="text-blue-600 font-bold">
+                          •
+                        </span>
 
                         <span>{achievement}</span>
 
@@ -213,7 +209,6 @@ export default function Leadership() {
                 </div>
 
                 {/* Skills */}
-
                 <div className="mt-8">
 
                   <h4 className="font-semibold text-slate-900 dark:text-white mb-4">
